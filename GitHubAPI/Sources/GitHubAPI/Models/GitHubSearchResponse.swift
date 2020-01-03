@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GitHubSearchResponse: Codable {
-    let total_count: UInt
-    let items: [GitHubSearchResult]
+public struct GitHubSearchResponse: Codable {
+    public let total_count: UInt
+    public let items: [GitHubSearchResult]
 }

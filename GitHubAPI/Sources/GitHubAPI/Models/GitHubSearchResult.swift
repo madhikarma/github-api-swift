@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct GitHubSearchResult: Identifiable, Codable {
-    let id: Int
-    let full_name: String
-    let description: String
-    let html_url: URL
-    let stargazers_count: Int
-    let watchers_count: Int
+public struct GitHubSearchResult: Identifiable, Codable {
+    public let id: Int
+    public let full_name: String
+    public let description: String
+    public let html_url: URL
+    public let stargazers_count: Int
+    public let watchers_count: Int
 }

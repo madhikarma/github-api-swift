@@ -7,9 +7,8 @@
 
 import Foundation
 
-enum GitHubSearchResultError: Error {
-    case parsingData(Error?)
+public enum GitHubSearchResultError: Error {
     case emptyData
-    case network(Error?)
+    case parsingData(Error?)
     case unknown(Error?)
 }
