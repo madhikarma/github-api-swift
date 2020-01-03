@@ -10,11 +10,17 @@ final class GitHubAPITests: XCTestCase {
         let expectation = XCTestExpectation()
         
         // When
-        gitHubAPI.getSearchResults(term: "swift") { (results, error) in
+        gitHubAPI.getSearchResults(term: "swift") { result in
             expectation.fulfill()
-            // Then
-            XCTAssertFalse(results.isEmpty)
-            XCTAssertNil(error)
+            // Then            
+            switch result {
+            case .success(let items):
+                print("search success: \(items)")
+                XCTAssertFalse(items.isEmpty)
+            case .failure(let error):
+                XCTFail("Error: expected search results but instead there was an error: \(error)")
+            }
+
         }
         XCTWaiter().wait(for: [expectation], timeout: 5)
     }
