@@ -61,7 +61,6 @@ public class GitHubAPI {
 // MARK: - Combine
 
 extension GitHubAPI {
-    
     @available(iOS 13.0, *)
     @available(OSX 10.15, *)
     public func getSearchResults(_ term: String) -> AnyPublisher<GitHubSearchResponse, Error> {

@@ -56,6 +56,6 @@ final class GitHubAPITests: XCTestCase {
     }
 
     static var allTests = [
-        ("testGetSearchResults", testGetSearchResults),
+        ("testGetSearchResults", testGetSearchResults)
     ]
 }

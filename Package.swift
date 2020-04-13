@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "GitHubAPI",
             targets: ["GitHubAPI"]
-        ),
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -27,6 +27,6 @@ let package = Package(
         .testTarget(
             name: "GitHubAPITests",
             dependencies: ["GitHubAPI"]
-        ),
+        )
     ]
 )
