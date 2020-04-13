@@ -58,9 +58,11 @@ public class GitHubAPI {
     }
 }
 
-extension GitHubAPI {
-    // MARK: - Combine
+// MARK: - Combine
 
+extension GitHubAPI {
+    
+    @available(iOS 13.0, *)
     @available(OSX 10.15, *)
     public func getSearchResults(_ term: String) -> AnyPublisher<GitHubSearchResponse, Error> {
         let url = makeSearchURL(term)
