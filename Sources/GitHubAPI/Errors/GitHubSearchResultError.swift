@@ -1,6 +1,6 @@
 //
 //  GitHubSearchResultError.swift
-//  
+//
 //
 //  Created by Shagun Madhikarmi on 31/12/2019.
 //
