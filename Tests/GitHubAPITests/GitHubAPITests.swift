@@ -2,6 +2,7 @@ import Combine
 @testable import GitHubAPI
 import XCTest
 
+@available(iOS 13.0, *)
 @available(OSX 10.15, *)
 final class GitHubAPITests: XCTestCase {
     private var cancellableSet: Set<AnyCancellable> = []
